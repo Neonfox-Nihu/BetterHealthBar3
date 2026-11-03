@@ -1,5 +1,5 @@
+# Fork-only build workflow, uploads dist shadowJar
 name: Build BetterHealthBar jar
--- fork-only build workflow, uploads dist shadowJar
 
 on:
   push:
@@ -26,6 +26,6 @@ jobs:
     - name: Upload jar
       uses: actions/upload-artifact@v4
       with:
-        name: bhb-jar
+        name: bh-jar
         path: dist/build/libs/*
         if-no-files: error
